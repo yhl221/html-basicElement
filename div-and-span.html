@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>div和span 的区别</title>
+    <style type="text/css">
+        .myspan1 {
+            color: #FFFFFF;
+            background-color: #800000;
+        }
+
+        .myspan2 {
+            color: #000000;
+            background-color: #CCFFCC;
+        }
+
+        .myspan3 {
+            color: #FFFFFF;
+            background-color: #000080;
+        }
+
+        .myspan4 {
+            color: #000000;
+            background-color: #FFCCCC;
+        }
+
+        .mydiv1 {
+            color: #FFFFFF;
+            background-color: #008000;
+        }
+
+        .mydiv2 {
+            color: #000000;
+            background-color: #CCCCFF;
+        }
+
+        .mydiv3 {
+            color: #FFFFFF;
+            background-color: #000000;
+        }
+
+        .mydiv4 {
+            color: #000000;
+            background-color: #FFFFAA;
+        }
+    </style>
+</head>
+<body>
+<h2>生命必须元素</h2>
+这是行内元素span<br/>
+<span>
+<span class="myspan1">水</span>
+<span class="myspan2">维生素</span>
+<span class="myspan3">蛋白质</span>
+<span class="myspan4">矿物质</span>
+</span>
+<hr>
+这是块级元素div
+<div>
+    <div class="mydiv1">水</div>
+    <div class="mydiv2">维生素</div>
+    <div class="mydiv3">蛋白质</div>
+    <div class="mydiv4">矿物质</div>
+</div>
+<hr>
+
+<div>
+    这是div和span之间的转化：通过定义css的display属性值来相互转化<br>
+    将span元素的display属性值定为“block”后，渲染元素时会另起一行<br>
+    将div元素的display属性值定为"inline"后，渲染元素时不会另起一行<br>
+    <hr>
+    <div>
+        <span style="display:block" class="mydiv1">这是span1</span>
+        <span style="display:block" class="mydiv2">这是span2</span>
+        <span style="display:block" class="mydiv3">这是span3</span>
+        <span style="display:block" class="mydiv4">这是span4</span>
+    </div>
+    <hr>
+    <div>
+        <div style="display:inline" class="myspan1">这是div1</div>
+        <div style="display:inline" class="myspan2">这是div1</div>
+        <div style="display:inline" class="myspan3">这是div1</div>
+        <div style="display:inline" class="myspan4">这是div1</div>
+    </div>
+    <hr>
+</div>
+</body>
+</html>
