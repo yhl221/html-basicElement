@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table</title>
+</head>
+<body>
+<table border="1">
+    <h3>表格使用水平标题</h3>
+    <tr>
+        <th>Name</th>
+        <th>Telephone</th>
+    </tr>
+    <tr>
+        <td>Lucy</td>
+        <td>3969443</td>
+    </tr>
+</table>
+
+<table border="1">
+    <h3>表格使用垂直标题</h3>
+    <tr>
+        <th>Name</th>
+        <td>Lucy</td>
+    </tr>
+    <tr>
+        <th>Telephone</th>
+        <td>394672</td>
+    </tr>
+</table>
+
+<table border="1">
+    <h3>空单元格</h3>
+    <tr>
+        <td>smile</td>
+        <td>smile</td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>smile</td>
+    </tr>
+</table>
+<table border="1">
+    <h3>带有标题的表格</h3>
+    <caption>Monthly savings</caption>
+    <tr>
+        <th>Month</th>
+        <th>Savings</th>
+    </tr>
+    <tr>
+        <td>January</td>
+        <td>$100</td>
+    </tr>
+    <tr>
+        <td>February</td>
+        <td>$50</td>
+    </tr>
+</table>
+<table border="1">
+    <h3>横跨两列的单元格</h3>
+    <tr>
+        <th>姓名</th>
+        <th colspan="2">电话</th>
+    </tr>
+    <tr>
+        <td>Bill Gates</td>
+        <td>55577954</td>
+        <td>55577889</td>
+    </tr>
+</table>
+<table border="1">
+    <h3>横跨两行的单元格</h3>
+    <tr>
+        <th>姓名</th>
+        <td>Bill Gates</td>
+    </tr>
+    <tr>
+        <th rowspan="2">电话</th>
+        <td>555778534</td>
+    </tr>
+    <tr>
+        <td>555889078</td>
+    </tr>
+</table>
+<table border="1" width="400">
+    <h3>在表格单元中排列内容</h3>
+    <tr>
+        <th align="left">消费项目</th>
+        <th align="right">一月</th>
+        <th align="right">二月</th>
+    </tr>
+    <tr>
+        <td align="left">衣服</td>
+        <td align="right">$241</td>
+        <td align="right">$60</td>
+    </tr>
+    <tr>
+        <td align="left">化妆品</td>
+        <td align="right">30</td>
+        <td align="right">50</td>
+    </tr>
+</table>
+<div>
+    <p>Table with frame="above"</p>
+    <table frame="above">
+        <tr>
+            <td>Month</td>
+            <td>Savings</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>Table with frame=below</p>
+    <table frame="below">
+        <tr>
+            <td>Month</td>
+            <td>Savings</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>Table with frame="hsides"</p>
+    <table frame="hsides">
+        <tr>
+            <td>Month</td>
+            <td>Savings</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+<div>
+    <p>Table with frame="vsides"</p>
+    <table frame="vsides">
+        <tr>
+            <td>Month</td>
+            <td>Savings</td>
+        </tr>
+        <tr>
+            <td>January</td>
+            <td>$100</td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
