@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表辨析</title>
+</head>
+<body>
+<h1>列表</h1>
+项目前的图形形状可以通过type 属性来确定，定义列表的列表项内部可以使用段落、换行符、图片、链接以及其他列表等等
+<div>
+    <h4>无序列表</h4>
+    <ul>
+        <li type="circle">电脑</li>
+        <li type="disc">手机</li>
+        <li type="square">收音机</li>
+        <li type="circle">照相机</li>
+    </ul>
+</div>
+
+<div>
+    <h4>有序列表</h4>
+    <ol start="3">
+        <li>数字列表</li>
+        <li type="A">字母列表</li>
+        <li type="a">小写字母列表</li>
+        <li type="I">罗马字母列表</li>
+        <li type="i">小写罗马字母列表</li>
+    </ol>
+</div>
+<div>
+    <h4>定义列表</h4>
+    <dl>
+        <dt>计算机</dt>
+        <dd>用来计算的仪器</dd>
+        <dt>显示器</dt>
+        <dd>以视觉方式显示信息的装置</dd>
+    </dl>
+</div>
+<div>
+    <h4>嵌套列表</h4>
+    <div>
+        <h5>无序列表嵌套</h5>
+        <ul>
+            <li>咖啡</li>
+            <li>茶
+                <ul>
+                    <li>绿茶
+                        <ul>
+                            <li>龙井</li>
+                        </ul>
+                    </li>
+                    <li>红茶
+                        <ul>
+                            <li>普洱</li>
+                            <li>大红袍</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>澄汁</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
